@@ -1,0 +1,134 @@
+/* Reset and fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #0f1216;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* Header */
+.tech-header {
+  background: #121820;
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0, 255, 255, 0.1);
+}
+
+.tech-header h1 {
+  color: #00ffff;
+  font-size: 1.8rem;
+}
+
+.tech-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.tech-header nav a {
+  color: #cceeff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.tech-header nav a:hover,
+.tech-header nav a.active {
+  color: #00ffff;
+  border-bottom: 2px solid #00ffff;
+}
+
+/* Hero Section */
+.tech-hero {
+  background: linear-gradient(120deg, #0a0f1c, #1c2a3a);
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.tech-hero h2 {
+  font-size: 2.5rem;
+  color: #00ffff;
+  margin-bottom: 1rem;
+}
+
+.tech-hero p {
+  font-size: 1.2rem;
+  color: #cceeff;
+}
+
+/* Services */
+.tech-services {
+  padding: 4rem 1rem;
+}
+
+.tech-card {
+  background: #1a1f2b;
+  border-left: 4px solid #00ffff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.tech-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px #00ffff66;
+}
+
+.tech-card h3 {
+  color: #00ffff;
+  margin-bottom: 0.5rem;
+}
+
+.tech-card p {
+  color: #c0dfff;
+}
+
+/* Footer */
+.tech-footer {
+  background: #121820;
+  padding: 2rem 0;
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+}
+/* --- Mobile Responsive for Tech Page --- */
+@media (max-width: 768px) {
+  .tech-header nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .tech-hero h2 {
+    font-size: 2rem;
+  }
+
+  .tech-card {
+    margin-bottom: 2rem;
+  }
+
+  .tech-services {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .tech-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .tech-footer p {
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,107 @@
+/* --- Chat Widget Specific Styles --- */
+.chat-widget {
+  position: fixed; /* Keep widget fixed on screen */
+  bottom: 20px;    /* 20px from bottom */
+  right: 20px;     /* 20px from right */
+  width: 280px;    /* Base width for desktop */
+  font-family: Arial, sans-serif; /* Consistent font */
+  z-index: 9999;   /* Ensure it stays on top */
+  background: white; /* White background for the main widget */
+  border: 1px solid #ccc; /* Subtle border */
+  border-radius: 10px; /* Overall rounded corners for the widget container */
+  overflow: hidden; /* Ensures content respects the border-radius */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* Soft shadow for depth */
+}
+
+.chat-header {
+  background: #25D366; /* WhatsApp green */
+  color: white;
+  padding: 12px;
+  cursor: pointer; /* Indicates it's clickable */
+  border-radius: 10px 10px 0 0; /* Rounded top-left and top-right corners */
+  font-weight: bold;
+  text-align: center; /* Center the "Chat with us" text */
+  transition: background 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.chat-header:hover {
+  background: #1DA851; /* Slightly darker green on hover */
+}
+
+.chat-body {
+  background: #f9f9f9; /* Light grey background for chat body */
+  padding: 10px;
+  border: 1px solid #ccc; /* Border to separate from main page */
+  border-top: none; /* No top border, visually connects to header */
+  display: none; /* Hidden by default, controlled by JavaScript */
+  flex-direction: column; /* Stacks input and button vertically */
+  border-radius: 0 0 10px 10px; /* Rounded bottom-left and bottom-right corners */
+}
+
+.chat-body input {
+  width: 100%; /* Full width within its container */
+  padding: 8px;
+  margin-bottom: 10px; /* Space below the input field */
+  border: 1px solid #bbb; /* Light grey border */
+  border-radius: 4px; /* Slightly rounded input field corners */
+  cursor: text; /* Text input cursor */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for focus */
+}
+
+.chat-body input:focus {
+  outline: none; /* Remove default browser outline */
+  border-color: #25D366; /* WhatsApp green border on focus */
+  box-shadow: 0 0 0 2px rgba(37, 211, 102, 0.3); /* Subtle green glow on focus */
+}
+
+.chat-body button {
+  background: #25D366; /* WhatsApp green */
+  color: white;
+  border: none; /* No border for the button */
+  padding: 8px 12px;
+  cursor: pointer; /* Indicates it's clickable */
+  border-radius: 4px; /* Slightly rounded button corners */
+  width: 100%; /* Full width within its container */
+  transition: background 0.3s ease; /* Smooth transition for hover */
+  box-sizing: border-box; /* Include padding in button's width */
+}
+
+.chat-body button:hover {
+  background: #1DA851; /* Slightly darker green on hover */
+}
+
+/* Show Chat Body when Active (controlled by JavaScript) */
+.chat-widget.active .chat-body {
+  display: flex; /* Show the chat body and use flex layout */
+}
+
+/* --- Mobile Responsiveness for Chat Widget --- */
+@media (max-width: 768px) {
+  .chat-widget {
+    width: 90%; /* Occupy 90% of the screen width */
+    right: 5%;  /* Position 5% from the right */
+    left: 5%;   /* Position 5% from the left to center it */
+    bottom: 15px; /* Slightly reduce bottom margin on smaller screens */
+    max-width: 280px; /* Prevent it from becoming too wide on tablets */
+  }
+
+  .chat-header {
+    padding: 10px; /* Slightly less padding on mobile */
+  }
+
+  .chat-body {
+    padding: 8px; /* Slightly less padding on mobile */
+  }
+
+  .chat-body input,
+  .chat-body button {
+    padding: 7px; /* Slightly less padding for input and button */
+  }
+}
+
+@media (max-width: 480px) {
+  .chat-widget {
+    bottom: 10px; /* Even less margin from bottom on very small screens */
+  }
+}

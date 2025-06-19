@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gas Services | GasTech Solutions</title>
+  <link rel="stylesheet" href="css/gas-service.css" />
+  <link rel="stylesheet" href="css/chat.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>GasTech Solutions</h1>
+      <nav>
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+        <ul id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gas-services.html" class="active">Gas Services</a></li>
+          <li><a href="tech-services.html">Tech Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero with CTAs -->
+  <section class="page-banner gas-hero">
+    <div class="container">
+      <h2>Fast. Safe. Certified LPG Services</h2>
+      <p>Your trusted partner for domestic & industrial gas, fittings, accessories, and much more.</p>
+      <div class="cta-buttons">
+        <a href="#order-form" class="btn">Order Refill</a>
+        <a href="#bulk" class="btn">Bulk Supply</a>
+        <a href="#accessories" class="btn">Accessories</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Overview -->
+  <section class="services">
+    <div class="container">
+      <h2>Our Core Services</h2>
+      <p class="section-intro">From household cylinders to industrial tank installations, we offer comprehensive LPG solutions:</p>
+      <div class="service-grid">
+        <div class="service-card">
+          <img src="images/domestic.jpg" alt="Domestic LPG">
+          <h3>Domestic LPG Delivery</h3>
+          <p>Timely home deliveries — 6 kg, 12.5 kg, 25 kg cylinders.</p>
+        </div>
+        <div class="service-card">
+          <img src="images/industrial.jpg" alt="Industrial LPG">
+          <h3>Industrial Gas Distribution</h3>
+          <p>Bulk LPG supply to factories, hotels, plants, and construction sites.</p>
+        </div>
+        <div class="service-card">
+          <img src="images/tank-sales.jpg" alt="Tank Sales">
+          <h3>Cylinder & Tank Sales</h3>
+          <p>New certified cylinders and storage tanks for any scale.</p>
+        </div>
+        <div class="service-card">
+          <img src="images/installation.jpg" alt="Installation">
+          <h3>Installations & Maintenance</h3>
+          <p>Regulator and pipe installation, leak checks, and thorough servicing.</p>
+        </div>
+        <div class="service-card">
+          <img src="images/accessories.jpg" alt="Accessories">
+          <h3>Accessories</h3>
+          <p>Regulators, hoses, valves, stoves — quality-tested for safety.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Showcase -->
+  <!-- Products Showcase -->
+  <section id="accessories" class="products-showcase">
+    <div class="container">
+      <h2>Popular Accessories & Cylinders</h2>
+
+      <!-- Image Carousel -->
+      <div class="product-carousel">
+        <img src="images/cylinder-multi.jpg" alt="Various LPG Cylinders">
+        <img src="images/blue-cylinder.jpg" alt="12.5 kg Blue Cylinder">
+        <img src="images/orange-cylinder6kg.jpg" alt="6 kg Orange Cylinder">
+        <img src="images/cylinder-range.jpg" alt="Cylinder Range 3‑12.5 kg">
+      </div>
+
+      <!-- Product Grid -->
+      <div class="product-grid">
+        <div class="product-item"><p>12.5 kg Cylinder</p></div>
+        <div class="product-item"><p>6 kg Cylinder</p></div>
+        <div class="product-item"><p>3 kg Cylinder with Burner</p></div>
+        <div class="product-item"><p>Bulk LPG Tank</p></div>
+      </div>
+      <a href="products.html" class="btn">See All Products</a>
+    </div>
+  </section>
+
+
+  <!-- Locations & Contact -->
+  <section class="offices">
+    <div class="container">
+      <h2>Our Offices & Helplines</h2>
+      <div class="office-list">
+        <div><strong>Lagos:</strong> Ira Mowo Rd, Ojo — 080 3922 0352 — lagos@gastech.com</div>
+        <div><strong>Imo State:</strong> Akokwa Orlu Rd, Akokwa — 080 2063 5373 — imo@gastech.com</div>
+        <div><strong>Anambra:</strong> Otuocha Aguleri Rd, Aguleri — 080 2063 5373 — anambra@gastech.com</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Trust -->
+  <section class="trust">
+    <div class="container">
+      <h2>Trusted With 20+ Years of Experience</h2>
+      <p>Our commitment to safety, compliance, and customer satisfaction has made us a trusted name in LPG services.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 GasTech Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Chat Widget -->
+  <div class="chat-widget" id="chat-widget">
+    <div class="chat-header" onclick="toggleChat()">💬 Chat with Agent</div>
+    <div class="chat-body" id="chat-body">
+      <input type="text" id="userMessage" placeholder="Type your message..." />
+      <button onclick="sendToWhatsApp()">Send</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+  <script src="js/chat.js"></script>
+
+</body>
+</html>

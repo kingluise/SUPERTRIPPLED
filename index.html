@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SUPPER TRIPPLE D</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/chat.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <h1 class="logo">SUPER TRIPPLE D</h1>
+      <nav>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <ul id="nav-links">
+          <li><a href="#gas">Gas Services</a></li>
+          <li><a href="#tech">Tech Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Slider Section -->
+  <section class="hero-slider">
+    <div class="slide active">
+      <img src="images/truck1.jpg" alt="Slide 1">
+      <div class="overlay">
+        <h2>Reliable LPG Distribution</h2>
+        <p>Supplying gas you can trust. Delivering tech that moves you forward.</p>
+        <a href="#contact" class="btn-primary">Get in Touch</a>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="images/tech.jpg" alt="Slide 2">
+      <div class="overlay">
+        <h2>Smart Tech Services</h2>
+        <p>Empowering businesses through innovation.</p>
+        <a href="#tech" class="btn-primary">Learn More</a>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="images/cylinder3.jpg" alt="Slide 3">
+      <div class="overlay">
+        <h2>Energy Meets Innovation</h2>
+        <p>Integrating IoT into gas distribution.</p>
+        <a href="#about" class="btn-primary">Our Story</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gas Services -->
+  <section id="gas" class="services">
+    <div class="container">
+      <h2>Our Gas Services</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <img src="images/domestic.jpg" alt="Domestic LPG" />
+          <h3>Domestic LPG Supply</h3>
+          <p>Reliable delivery of LPG for homes and small businesses.</p>
+        </div>
+        <div class="service-card">
+          <img src="images/industrial.jpg" alt="Industrial Gas" />
+          <h3>Industrial Gas Distribution</h3>
+          <p>Bulk LPG supply for factories and enterprises.</p>
+        </div>
+        <div class="service-card">
+          <img src="images/instal.jpg" alt="Gas Installation" />
+          <h3>Installations & Maintenance</h3>
+          <p>Safe cylinder and pipeline installations with professional servicing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Services -->
+  <section id="tech" class="services alt-bg">
+    <div class="container">
+      <h2>Our Tech Services</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <img src="images/consult.png" alt="IT Consultancy" />
+          <h3>IT Consultancy</h3>
+          <p>We help businesses set up smart IT infrastructures and digital processes.</p>
+        </div>
+        <div class="service-card">
+          <img src="images/software.jpg" alt="Software" />
+          <h3>Software & Automation</h3>
+          <p>Custom software development and workflow automation services.</p>
+        </div>
+        <div class="service-card">
+          <img src="images/iot.jpg" alt="Smart Energy" />
+          <h3>Smart Energy Integration</h3>
+          <p>IoT-powered gas monitoring and energy analytics solutions.</p>
+        </div>
+        <div class="service-card">
+          <img src="images/train.jpg" alt="Training" />
+          <h3>Training & Support</h3>
+          <p>Workshops and support for digital tools and safety education.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We are passionate about safe LPG distribution and smart tech solutions for businesses. Our mission is to bridge energy delivery with innovation and convenience for modern living.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container contact-flex">
+      <div class="contact-info">
+        <h2>Contact Us</h2>
+        <p><strong>Phone:</strong> +234 800 000 0000</p>
+        <p><strong>Email:</strong> info@gastech.com</p>
+        <p><strong>Address:</strong> 25 Energy Way, Ikeja, Lagos</p>
+      </div>
+      <div class="contact-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.7752376740363!2d3.352373416142289!3d6.601839195238204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93b2737b2d89%3A0x48f8b9e6aaf6c9f6!2sIkeja%2C%20Lagos!5e0!3m2!1sen!2sng!4v1718133283978!5m2!1sen!2sng"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 GasTech Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Chat Widget -->
+  <div class="chat-widget" id="chat-widget">
+    <div class="chat-header" onclick="toggleChat()">💬 Chat with us</div>
+    <div class="chat-body" id="chat-body">
+      <input type="text" id="userMessage" placeholder="Type your message..." />
+      <button onclick="sendToWhatsApp()">Send</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+  <script src="js/chat.js"></script>
+  <script src="js/slider.js"></script>
+    <script src="js/animation.js"></script>
+
+</body>
+</html>
